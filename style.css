@@ -29,7 +29,7 @@ button {
 	padding: 0.5rem 1rem;
 	border-radius: 3px;
 	color: #EBEBEB;
-	margin: 1rem;
+	margin: 1rem auto;
 	transition: all 5000;
 	display: block;
 }
@@ -41,4 +41,14 @@ button:hover {
 h1 {
 	font-family: 'Lobster Two', cursive;
 	font-weight: 700;
+}
+
+@media only screen and (max-width: 700px) {
+	html {
+		display: block;
+	}
+	body {
+		width: 100vw;
+		height: 100vh;
+	}
 }

@@ -1,0 +1,43 @@
+html {
+	background-image: linear-gradient(
+		to bottom,
+		#4062BB,
+		#59C3C3
+		);
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	height: 100vh;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	background-color: rgb(245, 245, 245);
+	width: 50vw;
+	padding: 1rem;
+	border-radius: 3px;
+	height: 50vh;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button {
+	width: 50%;
+	background-color: #F45B69;
+	outline: 2px solid #F45B69;
+	border: 1px solid white;
+	padding: 0.5rem 1rem;
+	border-radius: 3px;
+	color: #EBEBEB;
+	margin: 1rem;
+	transition: all 5000;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+h1 {
+	font-family: 'Lobster Two', cursive;
+	font-weight: 700;
+}

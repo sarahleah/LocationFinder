@@ -18,6 +18,8 @@ function handleFindLocation(e) {
 	
 	function getCoordinates() {
 
+		start.textContent = 'loading...'
+		
 		var options = {
 			enableHighAccuracy: true,
 			timeout: 5000,

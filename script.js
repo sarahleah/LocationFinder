@@ -35,6 +35,19 @@ function handleFindLocation(e) {
 		axios.get(`https://eu1.locationiq.com/v1/reverse.php?key=pk.d14395593ebaf13fd2e1f92b8efa2389&lat=${lat}&lon=${long}&format=json`)
 			.then(res => console.log(res.data.display_name))
 	}
+
+}
+
+function degToRad(deg) {
+	return deg * (Math.PI / 180)
+}
+
+function distToDegLat(dist) {
+	return dist/110.574
+}
+
+function distToDegLong(dist, lat) {
+	return dist/(111.320*(Math.cos(lat)))
 }
 
 form.addEventListener('submit', handleFindLocation)
